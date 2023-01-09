@@ -25,7 +25,20 @@ function btn_top(){
     });
 }
 
+// 日曆功能
+function cal(){
+    $("#birthday2_datepicker,#birthday_datepicker").datepicker(
+        {
+            //uiLibrary: 'bootstrap4',
+            format: 'yyyy/mm/dd',
+            startDate: '-3d',
+            language: 'zh-TW'
+        }
+    );
+}
+
 $(document).ready(function(){
-	  nav();
+	nav();
     btn_top();
+    cal();
 });
