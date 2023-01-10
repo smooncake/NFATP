@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html debug="ture" lang="zh_tw">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Patty Hsu">
+    <meta name="copyright" content="">
+    <title>全聯會</title>
+    <meta property="og:title" content="" />
+    <meta property="og:name" content="" />
+    <meta property="og:type" content="" >
+    <meta property="og:image" content="" />
+    <meta property="og:url" content=""/>
+    <meta property="og:description" content="" />
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script type="text/javascript">var console = { log: function() {} };</script>
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap/bootstrap-grid.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootnavbar.css" rel="stylesheet" type="text/css"/>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootnavbar.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/tinynav.min.js"></script>
+    <script src="js/init.js"></script>
+    <!-- Include Bootstrap Datepicker -->
+    <script type="text/javascript" src="bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="bootstrap-datepicker-1.9.0-dist/locales/bootstrap-datepicker.zh-TW.min.js" charset="UTF-8"></script>
+    <link href="bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <!-- HEADER -->
+      <header>
+         <!--NAV-->
+         <nav>
+            <div class="nav navbar navbar-expand-lg">
+               <div id="logo">
+                  <a href="index.html">
+                  全聯會
+                  </a>
+               </div>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                        認識全聯會
+                        </a>
+                     </li>
+<!--                      <li class="nav-item">
+                        <a class="nav-link" href="history.html">
+                        大紀事
+                        </a>
+                     </li> -->
+                     <li class="nav-item">
+                        <a  class="nav-link" href="news.html">
+                        最新消息
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a  class="nav-link" href="pt.html">
+                        物理治療師專區
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a  class="nav-link" href="login.html">
+                        登入
+                        </a>
+                     </li>
+                     <li class="search">
+                        <form class="search_form" action="">
+                           <div class="vessel">
+                              <label>搜尋</label>
+                              <input type="text" name="" placeholder="搜尋">
+                              <input type="submit" value="">
+                           </div>
+                        </form>
+                     </li>
+                  </ul>
+               </div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"><img src="images/icons/menu.svg" alt=""></span>
+                  </button>
+            </div>
+         </nav>
+         <!--END NAV-->
+      </header>
+      <!--END HEADER-->
+    <!-- MODAL 公司資料 -->
+    <div class="modal fade" id="member_info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-dialog-menber" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/icons/close.png" alt=""></span></button><b>公司資料</b></div>
+          </div>
+          <div id="member" class="modal-body">
+            <ul>
+              <li class="block_list">
+                <div class="block_list_input padding-text">
+                  <label>公司名稱<span class="red">*</span></label>
+                  <input type="text" name="" placeholder="請填寫營業登記名稱">
+                  <!-- <span class="red">錯誤訊息</span> -->
+                </div>
+              </li>
+              <li class="block_list">
+                <div class="block_list_input padding-text">
+                  <label>公司統編<span class="red">*</span></label>
+                  <input type="text" name="" placeholder="請輸入公司統編">
+                  <!-- <span class="red">錯誤訊息</span> -->
+                </div>
+              </li>
+              <li class="block_list">
+                <div class="block_list_input padding-text">
+                  <label>公司地址<span class="red">*</span></label>
+                  <div>
+                    <ul class="block_list_address">
+                      <li class="zip">
+                        <input type="text" name="" placeholder="郵遞區號">
+                      </li>
+                      <li class="input">
+                        <input type="text" name="" placeholder="請輸入地址">
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- <span class="red">錯誤訊息</span> -->
+                </div>
+              </li>
+              <li class="block_list">
+                <div class="block_list_input padding-text">
+                  <label>密碼<span class="red">*</span></label>
+                  <input type="text" name="" placeholder="輸入8-16字元需包含英文和數字，請勿使用特殊符號">
+                  <!-- <span class="red">錯誤訊息</span> -->
+                </div>
+              </li>
+              <li class="block_list">
+                <div class="block_list_input padding-text">
+                  <label>確認密碼<span class="red">*</span></label>
+                  <input type="text" name="" placeholder="再次輸入密碼">
+                  <!-- <span class="red">錯誤訊息</span> -->
+                </div>
+              </li>
+              <li class="block_list">
+                <div class="block_list_input padding-text">
+                  <label>聯絡人姓名<span class="red">*</span></label>
+                  <input type="text" name="" placeholder="請輸入聯絡人姓名">
+                  <!-- <span class="red">錯誤訊息</span> -->
+                </div>
+              </li>
+              <li class="block_list">
+                <div class="block_list_input padding-text">
+                  <label>聯絡人電話<span class="red">*</span></label>
+                  <input type="text" name="" placeholder="請輸入聯絡電話">
+                  <!-- <span class="red">錯誤訊息</span> -->
+                </div>
+              </li>
+              <li class="block_list">
+                <div class="block_list_input padding-text">
+                  <label>聯絡人信箱<span class="red">*</span></label>
+                  <input type="text" name="" placeholder="請輸入聯絡信箱">
+                  <!-- <span class="red">錯誤訊息</span> -->
+                </div>
+              </li>
+              <li class="block_list">
+                <div class="block_list_input padding-text">
+                  <label>聯絡人地址<span class="red">*</span></label>
+                  <div>
+                    <ul class="block_list_address">
+                      <li class="zip">
+                        <input type="text" name="" placeholder="郵遞區號">
+                      </li>
+                      <li class="input">
+                        <input type="text" name="" placeholder="請輸入地址">
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- <span class="red">錯誤訊息</span> -->
+                </div>
+              </li>
+              <li class="block_list">
+                <div class="btn btn_secondary">
+                  <a href="javascript:;">確認</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL 公司資料 -->
+    <!-- WRAPPER -->
+    <div id="wrapper">
+      <!-- MENBER -->
+      <section id="member">
+        <div class="row content">
+          <div class="col-lg-2 col-md-12 col-12 bootstrap_default">
+            <ul class="menber_sidebar">
+              <li class="menber_sidebar_list"><a href="business.html" class="active">公司資料</a></li>
+              <li class="menber_sidebar_list"><a href="business_carrer.html">職缺列表</a></li>
+              <li class="menber_sidebar_list"><a href="business_password.html">修改密碼</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-10 col-md-12 col-12 bootstrap_default">
+            <!-- 會員資料 -->
+            <ul>
+              <!-- 公司資料料 -->
+              <li class="member_section">
+                <div class="content_title03">
+                  公司資料
+                  <span class="btn btn_secondary_small_outline"><a href="javascript:;" data-toggle="modal" data-target="#member_info">編輯</a></span>
+                </div>
+                <ul class="member_block">
+                  <li class="member_list">
+                    <div class="member_list_name">桃園區骨科診所</div>
+                  </li>
+                  <li class="member_list">
+                    <div class="member_list_title">公司統編</div>
+                    <div class="member_list_content">00000016</div>
+                  </li>
+                  <li class="member_list">
+                    <div class="member_list_title">公司地址</div>
+                    <div class="member_list_content">台南市北區成德里38鄰北成路442號</div>
+                  </li>
+                  <li class="member_list"></li>
+                  <li class="member_list">
+                    <div class="member_list_content">
+                      以下資訊會主動帶入職缺列表
+                    </div>
+                  </li>
+                  <li class="member_list">
+                    <div class="member_list_title">聯絡人姓名</div>
+                    <div class="member_list_content">謝老師</div>
+                  </li>
+                  <li class="member_list">
+                    <div class="member_list_title">聯絡人電話</div>
+                    <div class="member_list_content">03-4633723#15</div>
+                  </li>
+                  <li class="member_list">
+                    <div class="member_list_title">聯絡人信箱</div>
+                    <div class="member_list_content">qook1106@yahoo.com.tw</div>
+                  </li>
+                  <li class="member_list">
+                    <div class="member_list_title">聯絡人地址</div>
+                    <div class="member_list_content">桃園市</div>
+                  </li>
+                </ul>
+              </li>
+              <!-- END 公司資料料 -->
+            </ul>
+            <!-- END 會員資料 -->
+          </div>
+        </div>
+      </section>
+      <!--END MENBER-->
+    </div>
+    <!--END WRAPPER-->
+    <!-- FOOTER -->
+    <footer>
+      <div id="footer">
+        <ul class="footer">
+          <li class="footer_info">
+            <img src="images/logo02.svg" alt="">
+            <div><img src="images/icons/location.png" alt="">10446台北市中山區林森北路372號5樓505室</div>
+            <div><img src="images/icons/tel.png" alt="">(02)2562-3967</div>
+            <div><img src="images/icons/mail.png" alt="">nfapt1@gmail.com</div>
+          </li>
+          <li class="footer_right">
+            <div class="footer_social">
+              Follow Us
+              <span><a href="javascript:;" target="_blank"><img src="images/icons/FacebookLogo.png" alt=""></a></span>
+              <span><a href="javascript:;" target="_blank"><img src="images/icons/InstagramLogo.png" alt=""></a></span>
+            </div>
+            <div class="footer_map">
+              台灣物理治療所地圖
+              <span><a href="https://www.google.com.tw/maps/@23.6977667,121.0499969,9z/data=!3m1!4b1!4m2!6m1!1s17jOphhBqHty75Hz5h4zFDh8Wpz3A3zqM?authuser=0" target="_blank">圖像版</a></span>
+              <span><a href="map.html">文字版</a></span>
+            </div>
+            <div class="copyright">Copyright ©NFAPT. All rights reserved</div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div id="btn_top">
+      <a href="javascript:;"><img src="images/arrow_up.png" alt="TOP"></a>
+    </div>
+    <!--END FOOTER-->
+  </body>
+  <script>
+    $(function () {
+      $(".menber_sidebar").tinyNav({
+        active: 'selected', // String: Set the "active" class
+        header: '選單', // String: Specify text for "header" and show header instead of the active item
+        indent: '- ', // String: Specify text for indenting sub-items
+        label: '' // String: Sets the <label> text for the <select> (if not set, no label will be added)
+      });
+    });
+  </script>
+</html>
